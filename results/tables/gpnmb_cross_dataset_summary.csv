@@ -1,0 +1,4 @@
+Dataset / analysis,Method,log2FC,P,FDR,Conclusion
+GSE243639,donor pseudobulk DESeq2,1.025,0.00863,0.218,"positive, nominally significant"
+GSE184950,donor-aware MAST,0.113,0.131,1,"same direction, not significant"
+Wang + Kamath + Smajic,donor pseudobulk,0.933,0.00186,0.050054,"concordant, borderline FDR"

@@ -1,0 +1,27 @@
+# Credentials
+synapse_auth_token.txt
+*.token
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Large downloaded data
+data/raw/
+data/processed/*.h5ad
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

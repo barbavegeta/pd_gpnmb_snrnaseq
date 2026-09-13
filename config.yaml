@@ -1,0 +1,55 @@
+project:
+  accession: GSE243639
+  target_gene: GPNMB
+  random_seed: 42
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  results: results
+
+primary:
+  geo_base: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243639/suppl"
+  files:
+    clinical: GSE243639_Clinical_data.csv.gz
+    umap: GSE243639_UMAP_coordinates.xlsx
+    raw_tar: GSE243639_RAW.tar
+
+analysis:
+  min_cells_gene: 3
+  n_hvg: 3000
+  n_pcs: 40
+  n_neighbors: 15
+  leiden_resolution: 0.6
+  min_nuclei_per_pseudobulk: 30
+  min_donors_per_condition: 5
+  min_gene_count: 10
+  min_samples_gene_count: 3
+  de_covariates:
+    - age
+    - sex
+  use_harmony: false
+  harmony_key: sample_id
+
+microglia:
+  author_label_match: "micro"
+  n_hvg: 2500
+  n_pcs: 30
+  n_neighbors: 15
+  leiden_resolution: 0.5
+  use_harmony: false
+
+markers:
+  Oligodendrocyte: [MBP, PLP1, MOG, MAG]
+  Astrocyte: [AQP4, GFAP, ALDH1L1, SLC1A3]
+  Microglia: [P2RY12, TMEM119, CX3CR1, AIF1, C1QA]
+  Endothelial: [CLDN5, EMCN, KDR, PECAM1]
+  Pericyte: [PDGFRB, RGS5, CSPG4, MCAM]
+  Neuron: [RBFOX3, SNAP25, SYT1, GRIN1]
+  Dopaminergic_neuron: [TH, SLC6A3, SLC18A2, NR4A2]
+  T_cell: [CD3D, CD3E, TRBC1, IL7R]
+
+microglia_signatures:
+  homeostatic: [P2RY12, TMEM119, CX3CR1, C1QA, C1QB, C1QC]
+  activated_GPNMB: [GPNMB, SPP1, TREM2, TYROBP, APOE, LPL, CST7, CD68]
+  interferon: [ISG15, IFITM3, IFI6, IFIT3, MX1]
