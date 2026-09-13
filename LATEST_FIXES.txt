@@ -1,0 +1,12 @@
+Consolidated latest code package.
+
+Includes:
+- sparse stacking + checkpointed primary AnnData build
+- semicolon-aware GSE243639 clinical metadata parser
+- openpyxl in environment.yml
+- low-memory backed-mode global analysis
+- backed AnnData view-of-view indexing fix
+- low-memory GPNMB summary, microglia, pseudobulk, and composition steps
+
+Existing downloaded GEO data are intentionally not included.
+Copy/symlink your existing data/raw/GSE243639 and data/processed files into this project if needed.
