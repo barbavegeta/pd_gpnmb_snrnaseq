@@ -1,0 +1,11 @@
+,value
+target_gene,GPNMB
+observed_log2fc,1.025213886275597
+observed_lfc_se,0.3903356397580517
+observed_base_mean,169.56729703877016
+implied_nb_dispersion,0.49200595663222657
+bh_p_cutoff,0.0004910154617634769
+bh_rejected,141
+bh_tested,14358
+type1_error_range,0.048-0.061
+n_sims,5000

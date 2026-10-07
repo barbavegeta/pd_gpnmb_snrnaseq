@@ -1,0 +1,54 @@
+name: bioinformatics
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - scanpy
+  - scvelo
+  - cellrank
+  - anndata
+  - umap-learn
+  - h5py
+  - zarr
+  - pysam
+  - biopython
+  - pyfaidx
+  - multiqc
+  - xgboost
+  - lightgbm
+  - optuna
+  - tqdm
+  - requests
+  - joblib
+  - bcftools
+  - samtools
+  - bedtools
+  - bwa
+  - fastqc
+  - fastp
+  - sra-tools=3.2.1
+  - hisat2
+  - bowtie2
+  - star
+  - minimap2
+  - freebayes
+  - vcftools
+  - picard
+  - trimmomatic
+  - gatk4
+  - htslib
+  - nextclade
+  - csvtk
+  - bioconductor-geoquery
+  - bioconductor-limma
+  - bioconductor-speckle
+prefix: /home/barbavegeta/miniconda3/envs/bioinformatics

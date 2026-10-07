@@ -1,0 +1,4 @@
+true_log2fc,fold_change,power_at_15_nominal,power_at_15_fdr,donors_per_group_for_80pct_nominal,donors_per_group_for_80pct_fdr
+0.5,1.41,0.253,0.0156,70,>100
+0.75,1.68,0.4798,0.0602,35,80
+1.0,2.0,0.7104,0.1812,20,50
